@@ -9,8 +9,6 @@ local ProfileService = require(script.Parent.ProfileService)
     @param player Player: The player who joined.
 ]]
 local function onPlayerAdded(player: Player)
-    task.wait(5)
-
     -- Load and retrieve the player's profile
     ProfileService.LoadProfile(player)
     local profile = ProfileService.getProfile(player)
